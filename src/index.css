@@ -231,24 +231,57 @@ h2 {
 }
 
 /* === RESPONSIVE DESIGN === */
+/* === DESAIN RESPONSIVE UNTUK MOBILE === */
 @media (max-width: 768px) {
+  /* 1. Penyesuaian Font secara Global */
+  h2 {
+    font-size: 2.2rem; /* Ukuran judul bagian (seperti "Tentang Saya") dikecilkan */
+  }
+
+  /* 2. Penyesuaian Padding Section */
+  section {
+    /* Padding atas-bawah dan kiri-kanan dikurangi agar tidak terlalu sesak */
+    padding: 4rem 1.5rem;
+  }
+
+  /* 3. Navbar */
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
   .navbar-links {
-    display: none; /* Sembunyikan untuk mobile, bisa diganti burger menu */
+    display: none; /* Sembunyikan link navigasi di mobile (langkah awal) */
+  }
+
+  /* 4. Hero Section */
+  .hero-section {
+    min-height: 80vh; /* Sedikit kurangi tinggi minimal agar tidak terlalu memakan tempat */
   }
 
   .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem; /* Judul utama dikecilkan secara signifikan */
   }
   
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Sub-judul juga dikecilkan */
   }
 
-  h2 {
-    font-size: 2rem;
+  .hero-cta-button {
+    padding: 0.8rem 1.6rem; /* Ukuran tombol dikecilkan sedikit */
+    font-size: 0.9rem;
   }
 
-  section {
-    padding: 4rem 1rem;
+  /* 5. Projects Section */
+  .project-card {
+    padding: 1.5rem; /* Kurangi padding di dalam kartu proyek */
+  }
+
+  /* 6. Contact Section */
+  .contact-links {
+    gap: 1.5rem; /* Kurangi jarak antar ikon sosial media */
+  }
+
+  .contact-links a {
+    font-size: 2.2rem; /* Kecilkan ukuran ikon */
   }
 }
